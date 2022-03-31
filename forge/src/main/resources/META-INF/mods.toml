@@ -1,0 +1,33 @@
+modLoader = "javafml"
+loaderVersion = "[40,)"
+#issueTrackerURL = ""
+license = "Insert License Here"
+
+[[mods]]
+modId = "creativecore"
+version = "${version}"
+displayName = "Creative Core"
+authors = "Me!"
+description = '''A simple but powerful coremod.'''
+#logoFile = ""
+
+[[dependencies.creativecore]]
+modId = "forge"
+mandatory = true
+versionRange = "[40,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.creativecore]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.18.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.creativecore]]
+modId = "architectury"
+mandatory = true
+versionRange = "[4.1.32,)"
+ordering = "AFTER"
+side = "BOTH"

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "creativecore",
+  "version": "${version}",
+  "name": "CreativeCore",
+  "description": "A simple but powerful coremod.",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "Insert License Here",
+  "icon": "assets/creativecore/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "team.creative.creativecore.fabric.CreativeCoreFabric"
+    ],
+    "client": [
+      "team.creative.creativecore.client.fabric.CreativeCoreClientFabric"
+    ]
+  },
+  "mixins": [
+    "creativecore.mixins.json",
+    "creativecore-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.18.2",
+    "architectury": ">=4.1.32"
+  }
+}
